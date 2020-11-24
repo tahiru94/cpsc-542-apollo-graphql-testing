@@ -9,4 +9,10 @@ describe('LaunchDetail', () => {
         expect(wrapper).toBeDefined();
     });
 
+    it('Has children', () => {
+        const wrapper = shallow(<LaunchDetail />);
+        expect(wrapper).toBeDefined();
+        expect(wrapper.children().length).toBeGreaterThan(0);
+    });
+
 });

@@ -8,10 +8,12 @@ describe('Header', () => {
         const wrapper = shallow(<Header />);
         expect(wrapper).toBeDefined();
     });
+
     it('renders with a p tag', () => {
         const wrapper = shallow(<Header />);
         const subText = wrapper.children().children().get(0).props.children[1];
 
         expect(subText).toEqual('p');
     });
+
 });
